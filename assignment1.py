@@ -7,7 +7,7 @@ print(len(salaries))
 # 2. Retrieve the third salary in the list by using index.
 
 print(salaries[2])
-
+    
 # 3. Extract the last salary from the list by using a negative index.
 
 print(salaries[-1])
