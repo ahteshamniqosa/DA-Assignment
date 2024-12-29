@@ -51,7 +51,7 @@ else:
     print("Not Accepted for bonus")  
 
 
-
+  
 # Answer__5: String manipulation to replace spaces with underscores
 text = "I'm learning Python programming?"  
 updated_text = text.replace(' ', '_')  
