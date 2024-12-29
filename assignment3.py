@@ -17,11 +17,9 @@ if age >= 18:
         print("Sorry, you are not eligible for the loan.")
 else:
     print("Sorry, you are not eligible for the loan.")
-
-
-
-
-
+    
+    
+    
 # Q2. Check if a person is an adult and categorize their experience.
 # If underage, just show "You are underage."
 # For adults, classify experience based on years.
@@ -40,8 +38,6 @@ else:
         print("You are relatively new.")
     else:
         print("You are just starting out.")
-
-
 
 
 
@@ -68,9 +64,6 @@ print("The type with the smallest memory is:", min_memory[0])
 
 
 
-
-
-
 # Q4. Validate an email address.
 # Check if it contains "@" and ".".
 
@@ -83,15 +76,11 @@ else:
 
 
 
-
-
 # Q5. Find the data types of elements in a tuple and display them in a list.
 
 x = (10, 20.5, 'Ali', [1, 2, 3], ('a', 'b'))
 data_types = [type(element).__name__ for element in x]
 print("Data types of tuple elements:", data_types)
-
-
 
 
 
@@ -111,8 +100,6 @@ else:
 
 
 
-
-
 # Q7. Determine relationships based on family data.
 # If person1 and person2 have the same family, print "Siblings".
 # If person1 and person3 have the same district but different family, print "Cousins".
@@ -128,9 +115,6 @@ elif person1[2] == person3[2]:
 
 
 
-
- 
-
 # Q8. Store and display book details using a tuple.
 
 title = input("Enter book title: ")
@@ -140,10 +124,6 @@ price = float(input("Enter book price: "))
 
 book = (title, author, year, price)
 print(f"Book Details: Title: {book[0]}, Author: {book[1]}, Year: {book[2]}, Price: {book[3]}")
-
-
-
-
 
 
 
@@ -159,9 +139,6 @@ else:
 
 
 
-
-
-
 # Q10. Tuple operations: Find index of a number and count its occurrences.
 
 numbers = (1, 2, 3, 2, 4, 5, 2, 6)
@@ -174,9 +151,6 @@ else:
 
 num2 = int(input("Enter another number to count: "))
 print(f"{num2} appears {numbers.count(num2)} times in the tuple.")
-
-
-
 
 
 
