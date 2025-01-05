@@ -109,10 +109,13 @@ print(sum_of_evens)
 # 4 x 8 = 32
 # 4 x 9 = 36
 # 4 x 10 = 40
-num = int(input("Enter a number between 1 and 10: "))
-for i in range(1, 11):
-    print(f"{num} x {i} = {num * i}")
 
+num = int(input("Enter a number between 1 and 10: "))
+if 1 <= num <= 10:
+    for i in range(1, 11):
+        print(f"{num} x {i} = {num * i}")
+else:
+    print("Please enter a valid number between 1 and 10.")
 
 # Q8. Power of a Number
 # Write a Python program that takes a number and prints the powers of the number (starting from 1
