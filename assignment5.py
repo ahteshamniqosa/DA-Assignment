@@ -128,7 +128,6 @@ print(f"Area: {area}, Perimeter: {perimeter}")
 
 
 # Q 10.
-
 # products = [9
 #     {"name": "Laptop", "price": 1200, "in_stock": True, "discount": 0.1},
 #     {"name": "Smartphone", "price": 800, "in_stock": False, "discount": 0.05},
@@ -136,7 +135,6 @@ print(f"Area: {area}, Perimeter: {perimeter}")
 #     {"name": "Smartwatch", "price": 300, "in_stock": True, "discount": 0},
 #     {"name": "Keyboard", "price": 100, "in_stock": True, "discount": 0.15}
 # ]
-
 # - Get names of in-stock products:
 #   *Use list comprehension to generate a list of names for the products that are in stock.                       
 # - Calculate final prices for in-stock products after discount:
