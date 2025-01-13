@@ -125,3 +125,43 @@ def calculate_rectangle(length, width):
 
 area, perimeter = calculate_rectangle(10, 5)
 print(f"Area: {area}, Perimeter: {perimeter}")
+
+
+# Q 10.
+
+# products = [9
+#     {"name": "Laptop", "price": 1200, "in_stock": True, "discount": 0.1},
+#     {"name": "Smartphone", "price": 800, "in_stock": False, "discount": 0.05},
+#     {"name": "Headphones", "price": 150, "in_stock": True, "discount": 0.2},
+#     {"name": "Smartwatch", "price": 300, "in_stock": True, "discount": 0},
+#     {"name": "Keyboard", "price": 100, "in_stock": True, "discount": 0.15}
+# ]
+
+# - Get names of in-stock products:
+#   *Use list comprehension to generate a list of names for the products that are in stock.                       
+# - Calculate final prices for in-stock products after discount:
+#     *For products that have a discount, calculate the final price by applying the discount.
+#     *For products with no discount, keep the original price.                                         
+# - Generate a list of tuples with the product name and its final price.
+# Example Output:
+# - In-stock product names: ['Laptop', 'Headphones', 'Smartwatch', 'Keyboard']
+# - Discounted prices: [('Laptop', 1080.0), ('Headphones', 120.0), ('Smartwatch', 300), ('Keyboard', 85.0)]
+
+
+products = [
+    {"name": "Laptop", "price": 1200, "in_stock": True, "discount": 0.1},
+    {"name": "Smartphone", "price": 800, "in_stock": False, "discount": 0.05},
+    {"name": "Headphones", "price": 150, "in_stock": True, "discount": 0.2},
+    {"name": "Smartwatch", "price": 300, "in_stock": True, "discount": 0},
+    {"name": "Keyboard", "price": 100, "in_stock": True, "discount": 0.15}
+]
+
+in_stock_names = [product["name"] for product in products if product["in_stock"]]
+
+discounted_prices = [
+    (product["name"], product["price"] * (1 - product["discount"]) if product["discount"] > 0 else product["price"])
+    for product in products if product["in_stock"]
+]
+
+print(f"In-stock product names: {in_stock_names}")
+print(f"Discounted prices: {discounted_prices}")
